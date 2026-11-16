@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Miel — Pâtisserie & Café</title>
+  <meta name="description" content="Maison Miel is a neighborhood pâtisserie and café baking croissants, tarts and celebration cakes fresh every morning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo" aria-label="Maison Miel home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 26c4-12 24-12 28 0-5 4-23 4-28 0z" fill="currentColor"/><path d="M12 22l3-8M20 21V11M28 22l-3-8" stroke="#fff8ee" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Maison Miel</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="#visit">Visit</a>
+        <a href="#order" class="btn btn-small">Order Ahead</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Pâtisserie · Café · Since 2014</p>
+          <h1>Butter, sugar,<br /><em>and patience.</em></h1>
+          <p class="lead">Croissants laminated over three days, tarts filled to order, and celebration cakes made by hand — baked fresh every morning before the doors open.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn">See the menu</a>
+            <a href="#order" class="btn btn-ghost">Order a cake</a>
+          </div>
+          <ul class="hero-facts">
+            <li><strong>6:30am</strong><span>first batch out</span></li>
+            <li><strong>40+</strong><span>pastries daily</span></li>
+            <li><strong>100%</strong><span>real butter</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="plate">
+            <!-- Croissant illustration -->
+            <svg viewBox="0 0 300 200" class="croissant">
+              <defs>
+                <linearGradient id="crust" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e9a24a"/>
+                  <stop offset="1" stop-color="#b8661f"/>
+                </linearGradient>
+              </defs>
+              <path d="M20 130 C40 60 110 30 150 30 C190 30 260 60 280 130 C250 160 200 170 150 170 C100 170 50 160 20 130Z" fill="url(#crust)"/>
+              <path d="M75 60 C90 100 95 140 92 165" stroke="#8a4512" stroke-width="5" fill="none" stroke-linecap="round" opacity=".55"/>
+              <path d="M150 32 C150 80 150 130 150 170" stroke="#8a4512" stroke-width="5" fill="none" stroke-linecap="round" opacity=".55"/>
+              <path d="M225 60 C210 100 205 140 208 165" stroke="#8a4512" stroke-width="5" fill="none" stroke-linecap="round" opacity=".55"/>
+              <path d="M60 70 C100 50 200 50 240 70" stroke="#f7c983" stroke-width="6" fill="none" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <div class="badge-float">Fresh<br />today</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-visual" aria-hidden="true">
+          <div class="tile t1"></div>
+          <div class="tile t2"></div>
+          <div class="tile t3"></div>
+        </div>
+        <div>
+          <p class="eyebrow">Our Story</p>
+          <h2>A small kitchen with a long memory.</h2>
+          <p>Maison Miel began as a single oven and a family recipe for honey madeleines. Today our team of pastry chefs still works the same way: small batches, seasonal fruit from local growers, and no shortcuts on technique.</p>
+          <p>Everything on the counter is made in-house that morning. Whatever's left at close goes to the community food bank down the street.</p>
+          <ul class="values">
+            <li><span>🌾</span> Locally milled flour</li>
+            <li><span>🧈</span> Cultured European-style butter</li>
+            <li><span>🍓</span> Seasonal, regional fruit</li>
+            <li><span>♻️</span> Zero-waste closing policy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The Menu</p>
+          <h2>From the counter</h2>
+          <p>Prices include tax. Items marked <span class="tag tag-v">V</span> are vegan, <span class="tag tag-gf">GF</span> are gluten-free.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" class="tab active" aria-selected="true" data-tab="viennoiserie">Viennoiserie</button>
+          <button role="tab" class="tab" aria-selected="false" data-tab="tarts">Tarts & Pastries</button>
+          <button role="tab" class="tab" aria-selected="false" data-tab="cakes">Cakes</button>
+          <button role="tab" class="tab" aria-selected="false" data-tab="drinks">Café</button>
+        </div>
+
+        <div class="menu-panel active" id="viennoiserie" role="tabpanel">
+          <article class="item"><div><h3>Butter Croissant</h3><p>72-hour laminated dough, shatter-crisp and honeycombed.</p></div><span class="price">$4.25</span></article>
+          <article class="item"><div><h3>Pain au Chocolat</h3><p>Two batons of 70% dark chocolate.</p></div><span class="price">$4.75</span></article>
+          <article class="item"><div><h3>Almond Croissant</h3><p>Twice-baked with frangipane and toasted almonds.</p></div><span class="price">$5.50</span></article>
+          <article class="item"><div><h3>Kouign-Amann</h3><p>Caramelized Breton butter cake, salted crust.</p></div><span class="price">$5.25</span></article>
+          <article class="item"><div><h3>Honey Madeleines (3)</h3><p>The original recipe, wildflower honey and brown butter.</p></div><span class="price">$4.00</span></article>
+          <article class="item"><div><h3>Cardamom Bun</h3><p>Swedish-style knot, pearl sugar. <span class="tag tag-v">V</span></p></div><span class="price">$4.50</span></article>
+        </div>
+
+        <div class="menu-panel" id="tarts" role="tabpanel" hidden>
+          <article class="item"><div><h3>Tarte au Citron</h3><p>Sharp lemon curd, torched Italian meringue.</p></div><span class="price">$7.00</span></article>
+          <article class="item"><div><h3>Seasonal Fruit Tart</h3><p>Vanilla crème pâtissière, whatever the market brought in.</p></div><span class="price">$7.50</span></article>
+          <article class="item"><div><h3>Paris-Brest</h3><p>Choux ring, hazelnut praline mousseline.</p></div><span class="price">$8.00</span></article>
+          <article class="item"><div><h3>Éclair</h3><p>Coffee, chocolate, or salted caramel.</p></div><span class="price">$6.25</span></article>
+          <article class="item"><div><h3>Mille-Feuille</h3><p>Caramelized puff pastry, vanilla bean cream.</p></div><span class="price">$8.50</span></article>
+          <article class="item"><div><h3>Flourless Chocolate Torte</h3><p>Dense, dark, a little salty. <span class="tag tag-gf">GF</span></p></div><span class="price">$7.00</span></article>
+        </div>
+
+        <div class="menu-panel" id="cakes" role="tabpanel" hidden>
+          <article class="item"><div><h3>Honey & Pistachio Opera</h3><p>Our signature. Slice / 8" whole.</p></div><span class="price">$9 / $58</span></article>
+          <article class="item"><div><h3>Strawberry Fraisier</h3><p>Genoise, mousseline, whole berries. Slice / 8" whole.</p></div><span class="price">$9 / $55</span></article>
+          <article class="item"><div><h3>Basque Cheesecake</h3><p>Burnt top, custardy center. <span class="tag tag-gf">GF</span></p></div><span class="price">$8 / $48</span></article>
+          <article class="item"><div><h3>Carrot & Brown Butter</h3><p>Cream cheese frosting, candied walnuts.</p></div><span class="price">$8 / $50</span></article>
+          <article class="item"><div><h3>Custom Celebration Cake</h3><p>Designed with you. 72 hours' notice please.</p></div><span class="price">from $75</span></article>
+        </div>
+
+        <div class="menu-panel" id="drinks" role="tabpanel" hidden>
+          <article class="item"><div><h3>Espresso</h3><p>Single-origin, rotating roaster.</p></div><span class="price">$3.25</span></article>
+          <article class="item"><div><h3>Café au Lait</h3><p>In a proper bowl, the way it should be.</p></div><span class="price">$4.75</span></article>
+          <article class="item"><div><h3>Honey Lavender Latte</h3><p>House-made syrup, oat milk on request.</p></div><span class="price">$5.75</span></article>
+          <article class="item"><div><h3>Chocolat Chaud</h3><p>Thick Parisian-style hot chocolate.</p></div><span class="price">$5.50</span></article>
+          <article class="item"><div><h3>Loose-Leaf Tea</h3><p>Earl grey, jasmine, chamomile, or mint.</p></div><span class="price">$3.75</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPECIALS ============ -->
+    <section id="specials" class="section specials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">This Season</p>
+          <h2>Weekly specials</h2>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-art art-pear" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="pill">Mon – Wed</span>
+              <h3>Pear & Ginger Danish</h3>
+              <p>Poached Bosc pears, candied ginger, vanilla custard.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-art art-choc" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="pill">Thu – Fri</span>
+              <h3>Chestnut Mont Blanc</h3>
+              <p>Meringue base, chestnut cream, whipped crème fraîche.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-art art-berry" aria-hidden="true"></div>
+            <div class="card-body">
+              <span class="pill">Weekends</span>
+              <h3>Brunch Box for Two</h3>
+              <p>Four pastries, two coffees, jam, and cultured butter — $28.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section quotes">
+      <div class="container">
+        <div class="quote-slider" aria-live="polite">
+          <blockquote class="quote active">
+            <p>“The kind of croissant you think about for the rest of the week.”</p>
+            <cite>— A regular since day one</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“They made our wedding cake and people are still talking about it.”</p>
+            <cite>— Celebration cake customer</cite>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“Get there before nine or the kouign-amann is gone. Trust me.”</p>
+            <cite>— Weekend early riser</cite>
+          </blockquote>
+        </div>
+        <div class="dots" role="tablist" aria-label="Testimonials">
+          <button class="dot active" aria-label="Testimonial 1"></button>
+          <button class="dot" aria-label="Testimonial 2"></button>
+          <button class="dot" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section id="visit" class="section visit">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow">Visit Us</p>
+          <h2>Come for a coffee, stay for a second croissant.</h2>
+          <address>
+            123 Baker Street<br />
+            Your City, ST 00000<br />
+            <a href="tel:+15555550123">(555) 555-0123</a>
+          </address>
+          <p id="open-status" class="open-status"></p>
+        </div>
+        <table class="hours" aria-label="Opening hours">
+          <tbody>
+            <tr data-day="1"><th>Monday</th><td>7:00 – 15:00</td></tr>
+            <tr data-day="2"><th>Tuesday</th><td>7:00 – 15:00</td></tr>
+            <tr data-day="3"><th>Wednesday</th><td>7:00 – 15:00</td></tr>
+            <tr data-day="4"><th>Thursday</th><td>7:00 – 17:00</td></tr>
+            <tr data-day="5"><th>Friday</th><td>7:00 – 17:00</td></tr>
+            <tr data-day="6"><th>Saturday</th><td>8:00 – 16:00</td></tr>
+            <tr data-day="0"><th>Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ ORDER ============ -->
+    <section id="order" class="section order">
+      <div class="container order-grid">
+        <div>
+          <p class="eyebrow">Order Ahead</p>
+          <h2>Cakes, boxes & catering</h2>
+          <p>Send us your request and we'll confirm by phone or email within one business day. Custom cakes need at least 72 hours' notice.</p>
+        </div>
+        <form id="order-form" class="form" novalidate>
+          <div class="row">
+            <label>Name<input name="name" type="text" required autocomplete="name" /></label>
+            <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+          </div>
+          <div class="row">
+            <label>Pickup date<input name="date" type="date" required /></label>
+            <label>What would you like?
+              <select name="type" required>
+                <option value="">Choose…</option>
+                <option>Whole cake</option>
+                <option>Custom celebration cake</option>
+                <option>Pastry box (12)</option>
+                <option>Brunch box for two</option>
+                <option>Catering / event</option>
+              </select>
+            </label>
+          </div>
+          <label>Details<textarea name="notes" rows="4" placeholder="Flavors, servings, allergies, message on the cake…"></textarea></label>
+          <button type="submit" class="btn">Send request</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo logo-light">Maison Miel</a>
+        <p>Pâtisserie & café. Baked fresh daily.</p>
+      </div>
+      <form class="newsletter" id="newsletter">
+        <label for="nl-email">Get the weekly specials</label>
+        <div><input id="nl-email" type="email" placeholder="you@example.com" required /><button class="btn btn-small" type="submit">Join</button></div>
+      </form>
+      <p class="copy">© <span id="year"></span> Maison Miel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
