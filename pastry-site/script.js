@@ -45,13 +45,14 @@ function restart() {
 }
 restart();
 
-// Opening hours: highlight today + open/closed status
-const hours = { 0: null, 1: [7, 15], 2: [7, 15], 3: [7, 15], 4: [7, 17], 5: [7, 17], 6: [8, 16] };
+// Opening hours (Addis Ababa time): highlight today + open/closed status
+const hours = { 0: [8, 20], 1: [7, 21], 2: [7, 21], 3: [7, 21], 4: [7, 21], 5: [7, 22], 6: [8, 22] };
 const now = new Date();
-const day = now.getDay();
+const addis = new Date(now.toLocaleString('en-US', { timeZone: 'Africa/Addis_Ababa' }));
+const day = addis.getDay();
 document.querySelector(`.hours tr[data-day="${day}"]`)?.classList.add('today');
 const status = document.getElementById('open-status');
-const h = now.getHours() + now.getMinutes() / 60;
+const h = addis.getHours() + addis.getMinutes() / 60;
 const today = hours[day];
 if (today && h >= today[0] && h < today[1]) {
   status.textContent = `Open now · until ${today[1]}:00`;

@@ -1,14 +1,14 @@
-# Maison Miel — Pastry Restaurant Website
+# Hammer Coffee & Pastry — Website
 
-A static, responsive website for a pâtisserie & café. No build step: open `index.html` in a browser.
+A static, responsive website for a coffee & pastry shop in Bole, Addis Ababa. No build step: open `index.html` in a browser.
 
 ## Sections
 - Hero with call-to-action
 - Our Story
-- Tabbed menu (Viennoiserie, Tarts & Pastries, Cakes, Café) with vegan/gluten-free tags
+- Tabbed menu (Coffee, Croissants & Breads, Pastries, Cakes) with prices in ETB
 - Weekly specials
 - Rotating testimonials
-- Hours & location (highlights today and shows open/closed live)
+- Hours & location (highlights today and shows open/closed in Addis Ababa time)
 - Order-ahead form (validation, 72-hour rule for custom cakes)
 - Newsletter signup in the footer
 
